@@ -1,0 +1,51 @@
+<template>
+
+	<lightning-card>
+		<div class="slds-m-around_medium" if:true={visible}>
+			<h1 class="slds-text-heading_large">
+				Trazer dados do Cliente
+			</h1>
+			<p>Nome: {name}</p>
+			<p>Telefone: {tel}</p>
+			<p>Cpf: {cpf}</p>
+			<p>Idade: {idade}</p>
+
+		</div>
+
+
+
+		<div class="slds-m-around_medium" if:false={visible}>
+			<h1 class="slds-text-heading_large">
+				Redes Sociais
+			</h1>
+			<p> <a href={img1} target="_blank"> Logo SalesForce </a> </p>
+			<p>Site: <a href={soulCode} target="_blank"> Click </a> </p>
+		</div>
+		<lightning-button variant="brand" label="Trocar Div" title="Alterar visible" onclick={trocarDiv}
+			class="slds-m-left_x-small">
+		</lightning-button>
+
+		<lightning-button variant="brand" label="Alterar" title="Trocar Dados" onclick={alterar}
+			class="slds-m-left_x-small">
+		</lightning-button>
+
+		<!-- <lightning-button variant="brand" label="Gabriella" title="TDados" onclick={retomaValor}
+			class="slds-m-left_x-small">
+		</lightning-button> -->
+
+	</lightning-card>
+
+
+
+
+</template>
+
+<!--
+	h1 -> Trazer dados da Classe
+
+
+	p-> Nome:
+	p-> Telefone:
+	p-> Cpf:
+	p-> Idade:
+-->
